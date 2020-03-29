@@ -1,0 +1,49 @@
+- Project Overview:
+ - 26 paychecks / year
+ - Employees paid $2000 / paycheck
+   - $2000*26 = x pay per year = $52000
+ - cost of benefits is $1000 / year / employee
+   - $1000/26 paychecks = x per check = 38.46 + (one added deduction of $0.04)
+ - cost of dependents is $500 / year / dependent
+   - $500/26 paychecks = x per check per dependent = 19.23 + (one added deduction of $0.02)
+
+ - Discount (if name starts with 'A') is 10% (employee or dependent) (I will interpret this to mean FirstName)
+
+- Classes:
+ - EMPLOYEE = {
+		FirstName: String
+		LastName: String
+		Dependents: Array of Dependents
+		***Pay: Pay object
+	}
+
+ - DEPENDENT = {
+		Name: String
+	}
+
+ - PAY = {
+		Paychecks_Per_Year: Integer
+		Pay_Per_Paycheck: Float
+	}
+
+Variables:
+ - EMPLOYEE_BENEFIT_COST = $1000 (year)
+ - DEPENDENT_BENEFIT_COST = $500 (year)
+ - GROSS_PAY = $2000 (paycheck)
+ - PAYCHECKS_YEAR = 26
+ - DISCOUNT_LETTER = 'a'
+
+Functions:
+ - CRUD EMPLOYEE
+ - CRUD DEPENDENT
+ - ***CRUD PAY
+ - Calculate discount
+ - Calculate deduction (employee + dependent - discounts)
+ - Menu show / select information
+ - Load / Save JSON data
+ - ***Option to print to text file
+
+
+- enter employee
+ - enter dependents
+  - print results
